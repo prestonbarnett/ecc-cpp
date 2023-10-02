@@ -1,0 +1,13 @@
+project(ecc_lib)
+
+set(HEADER_FILES
+        FieldElement.h
+        integer.h
+)
+
+set(SOURCE_FILES
+        FieldElement.cpp
+        integer.cpp
+)
+
+add_library(ecc_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
